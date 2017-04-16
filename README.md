@@ -4,8 +4,8 @@ Wrapping of *[Font Awesome](http://fontawesome.io)* as [Polymer](https://www.pol
 ### Using *slate-font-awesome* modules
 
 Using  polymer [shared styles](https://www.polymer-project.org/2.0/docs/devguide/style-shadow-dom#style-modules) modules is a two-step process:  
-you need to use a `<link>` tag to import the module,  
-and a `<style>` tag to include the styles in the correct place.
+1) you need to use a `<link>` tag to import the module,  
+2) and a `<style>` tag to include the styles in the correct place.
 
 To use *slate-font-awesome* in an element:
 
