@@ -4,7 +4,7 @@
     "Jean-François Le Foll <jeff.lefoll@outlook.fr>"
   ],
   "description": "Polymer wrap for Font Awesome CSS",
-  "version": "4.7.1",
+  "version": "4.7.0",
   "repository": "JeffLeFoll/slate-font-awesome",
   "main": "slate-font-awesome-generator.js",
   "author": "",

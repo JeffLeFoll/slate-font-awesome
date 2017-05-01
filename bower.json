@@ -12,22 +12,13 @@
     "awesome",
     "font-awesome"
   ],
-  "main": [
-    "slate-font-awesome-min.html",
-    "slate-font-awesome.html",
-    "fonts/fontawesome-webfont.eot",
-    "fonts/fontawesome-webfont.svg",
-    "fonts/fontawesome-webfont.ttf",
-    "fonts/fontawesome-webfont.woff",
-    "fonts/fontawesome-webfont.woff2",
-    "fonts/FontAwesome.otf"
-  ],
+  "main": "slate-font-awesome-min.html",
   "license": "Apache-2.0",
   "homepage": "https://github.com/JeffLeFoll/slate-font-awesome",
   "ignore": [],
   "dependencies": {},
   "devDependencies": {
-    "font-awesome": "^4.7.1",
+    "font-awesome": "^4.7.0",
     "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
     "paper-styles": "PolymerElements/paper-styles#2.0-preview",
