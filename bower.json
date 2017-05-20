@@ -24,5 +24,8 @@
     "paper-styles": "PolymerElements/paper-styles#2.0.0",
     "test-fixture": "PolymerElements/test-fixture#^3.0.0",
     "web-component-tester": "^6.0.0"
+  },
+  "demos": {
+    "Demo": "demo/index.html"
   }
 }
