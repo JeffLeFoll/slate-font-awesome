@@ -47,29 +47,32 @@ If you build you application with Polymer-cli build task you may also need to ed
 ## Demo !
 
 [https://jefflefoll.github.io/slate-font-awesome](https://jefflefoll.github.io/slate-font-awesome)
-
-<!--
-```
-<custom-element-demo>
-  <template>
-    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="slate-font-awesome.html">
-    <style include="slate-font-awesome"></style>
-    <next-code-block></next-code-block>
-  </template>
-</custom-element-demo>
-```
--->
+ 
 ```html
-<i class="fa fa-camera-retro lg"></i> fa-lg <br>
-<i class="fa fa-camera-retro fa-2x"></i> fa-2x <br>
-<i class="fa fa-camera-retro fa-3x"></i> fa-3x <br>
-<i class="fa fa-fighter-jet fa-spin fa-3x fa-fw"></i> Top Gun Style :) <br>
-<span class="fa-stack fa-lg">
+<link rel="import" href="../../bower_components/slate-font-awesome/slate-font-awesome.html">
+
+<dom-module id="slate-font-awesome-example">
+    <template>
+        <style include="slate-font-awesome"></style>
+		
+        <i class="fa fa-camera-retro lg"></i> fa-lg <br>
+        <i class="fa fa-camera-retro fa-2x"></i> fa-2x <br>
+        <i class="fa fa-camera-retro fa-3x"></i> fa-3x <br>
+        <i class="fa fa-fighter-jet fa-spin fa-3x fa-fw"></i> Top Gun Style :) <br>
+        <span class="fa-stack fa-lg">
          <i class="fa fa-camera fa-stack-1x"></i>
          <i class="fa fa-ban fa-stack-2x" style="color: red;"></i>
-</span> fa-ban on fa-camera
-```
+        </span> fa-ban on fa-camera
+    </template>
+
+    <script>
+        class SlateFontAwesomeExample extends Polymer.Element {
+            static get is() { return 'slate-font-awesome-example'; }
+        }
+        window.customElements.define(SlateFontAwesomeExample.is, SlateFontAwesomeExample);
+    </script>
+</dom-module>
+``` 
 
 ## Generating the elements
 
