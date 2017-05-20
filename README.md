@@ -39,6 +39,11 @@ In your element's template you add the include for the *slate-font-awesome* modu
 
 For large application, if you want to use *slate-font-awesome* in sub-component, you may need to add also the *slate-font-awesome* module in your index.html <custom-style> tag.
 
+If you build you application with Polymer-cli build task you may also need to edit the *polymer.json* and add the following extra-dependencies:
+```
+    "bower_components/slate-font-awesome/fonts/*.*"
+```
+
 ## Demo !
  
 ```
