@@ -37,7 +37,7 @@ In your element's template you add the include for the *slate-font-awesome* modu
 <style include="slate-font-awesome"></style>
 ```
 
-For large aplication, using polymer serve, you may need to add also the *slate-font-awesome* module in your index.html <custom-style> tag.
+For large application, if you want to use *slate-font-awesome* in sub-component, you may need to add also the *slate-font-awesome* module in your index.html <custom-style> tag.
 
 ## Demo !
  
