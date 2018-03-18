@@ -1,5 +1,5 @@
 # slate-font-awesome [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/JeffLeFoll/slate-font-awesome)
-Wrapping of *[Font Awesome](http://fontawesome.io)* as [Polymer](https://www.polymer-project.org) web componentto be used as [shared style](https://www.polymer-project.org/2.0/docs/devguide/style-shadow-dom#style-modules) in full ShadowDOM mode (i.e. inside `<dom-module>` tags).
+Wrapping of *[Font Awesome](http://fontawesome.io)* as [Polymer](https://www.polymer-project.org) web component to be used as [shared style](https://www.polymer-project.org/2.0/docs/devguide/style-shadow-dom#style-modules) in full ShadowDOM mode (i.e. inside `<dom-module>` tags).
 
 
 ### Using *slate-font-awesome* modules
