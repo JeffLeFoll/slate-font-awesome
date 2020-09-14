@@ -17,6 +17,7 @@ Add the dependency to the `bower.json` of your application:
      [...]
      "slate-font-awesome": "slate-font-awesome#5.14.0"
    }
+```
 
 And then recover them via `bower install`.
 
