@@ -18,7 +18,6 @@
   "ignore": [],
   "dependencies": {},
   "devDependencies": {
-    "font-awesome": "^4.7.0",
     "iron-component-page": "PolymerElements/iron-component-page#2.0.0",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0.0",
     "paper-styles": "PolymerElements/paper-styles#2.0.0",

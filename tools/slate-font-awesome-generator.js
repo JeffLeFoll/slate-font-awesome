@@ -1,7 +1,7 @@
 const fse = require('fs-extra');
 const klaw = require('klaw')
 
-const sourceFolder = "./bower_components/font-awesome";
+const sourceFolder = "./node_modules/@fortawesome/fontawesome-free";
 const targetFolder = "."
 
 
@@ -13,16 +13,16 @@ klaw(sourceFolder + '/css').on('data', item => {
         fse.ensureDirSync(targetFolder);
 
         let data = fse.readFileSync(item.path, "utf8");
-        data = data.replace(new RegExp('../fonts/', 'g'), './fonts/');
+        data = data.replace(new RegExp('../webfonts/', 'g'), './fonts/');
 
         let out = generateHeader(filename) + data + generateFooter();
         let finalFileName = filename.replace('.css', '.html').replace('.min', '-min');
 
-        fse.writeFileSync(`${targetFolder}/slate-${finalFileName}`, out);
+        fse.writeFileSync(`${targetFolder}/slate-fa5-${finalFileName}`, out);
     }
 });
 
-fse.copy(sourceFolder + '/fonts', targetFolder + '/fonts', err => {
+fse.copy(sourceFolder + '/webfonts', targetFolder + '/fonts', err => {
   if (err) return console.error(err)
 });
 
@@ -31,10 +31,10 @@ function generateHeader(name) {
     return `
 <!--
 @license Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
-Copyright (c) 2017 Jean-François Le Foll "JeffLeFoll" for the Web Component encapsulation of Font Awesome CSS code
+Copyright (c) 2020 Jean-François Le Foll "JeffLeFoll" for the Web Component encapsulation of Font Awesome 5 CSS code
 @demo demo/index.html
 -->
-<dom-module id="slate-${componentName}"><template><style>\n`;
+<dom-module id="slate-fa5-${componentName}"><template><style>\n`;
 }
 
 function generateFooter() {

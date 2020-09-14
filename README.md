@@ -1,5 +1,5 @@
 # slate-font-awesome [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/JeffLeFoll/slate-font-awesome)
-Wrapping of *[Font Awesome](http://fontawesome.io)* as [Polymer](https://www.polymer-project.org) web component to be used as [shared style](https://www.polymer-project.org/2.0/docs/devguide/style-shadow-dom#style-modules) in full ShadowDOM mode (i.e. inside `<dom-module>` tags).
+Wrapping of *[Font Awesome 5](http://fontawesome.com)* as [Polymer](https://www.polymer-project.org) web component to be used as [shared style](https://www.polymer-project.org/2.0/docs/devguide/style-shadow-dom#style-modules) in full ShadowDOM mode (i.e. inside `<dom-module>` tags).
 
 
 ### Using *slate-font-awesome* modules
@@ -15,32 +15,31 @@ Add the dependency to the `bower.json` of your application:
 ```
    "dependencies": {
      [...]
-     "slate-font-awesome": "slate-font-awesome#4.7.0"
+     "slate-font-awesome": "slate-font-awesome#5.14.0"
    }
-``` 
 
 And then recover them via `bower install`.
 
 ## Usage
 
-Usually you will simply want to import `slate-font-awesome.html` (wrap around `font-awesome.css`) or `slate-font-awesome-min.html`
-(wrap around `font-awesome.min.css`).
+Usually you will simply want to import `slate-fa5-all.html` (wrap around Font Awesome's `all.css`) or `slate-fa5-all-min.html`
+(wrap around Font Awesome's `all.min.css`).
 
 Supposing you're using bower to manage your components:
  
 ```
-<link rel="import" href="../../bower_components/slate-font-awesome/slate-font-awesome.html">
+<link rel="import" href="../../bower_components/slate-font-awesome/slate-fa5-all.html">
 ``` 
-In your element's template you add the include for the *slate-font-awesome* module:
+In your element's template you add the include for the *slate-fa5-all* module:
 
 ```html
-<style include="slate-font-awesome"></style>
+<style include="slate-fa5-all"></style>
 ```
 
 For Chrome only (at least up to 59), if you want to use *slate-font-awesome* in sub-component, you may need to add also the *slate-font-awesome* module in your index.html `<custom-style>` tag: 
 ```html
     <custom-style>
-        <style include="slate-font-awesome">
+        <style include="slate-fa5-all">
             ...
         </style>
   </custom-style>
@@ -51,16 +50,26 @@ If you build you application with Polymer-cli build task you may also need to ed
     "bower_components/slate-font-awesome/fonts/*.*"
 ```
 
+## Font Awesome 5 modules
+
+- *slate-fa5-brands*
+- *slate-fa5-fontawesome*
+- *slate-fa5-regular*
+- *slate-fa5-solid*
+- *slate-fa5-all*
+
+add *-min* for the minified version.
+
 ## Demo !
 
 [https://jefflefoll.github.io/slate-font-awesome](https://jefflefoll.github.io/slate-font-awesome)
  
 ```html
-<link rel="import" href="../../bower_components/slate-font-awesome/slate-font-awesome.html">
+<link rel="import" href="../../bower_components/slate-font-awesome/slate-fa5-all.html">
 
 <dom-module id="slate-font-awesome-example">
     <template>
-        <style include="slate-font-awesome"></style>
+        <style include="slate-fa5-all"></style>
 		
         <i class="fa fa-camera-retro lg"></i> fa-lg <br>
         <i class="fa fa-camera-retro fa-2x"></i> fa-2x <br>
